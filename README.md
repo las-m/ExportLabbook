@@ -2,6 +2,10 @@
 OneNote labbook export and backup tool
 
 You need to download the pdfsharp dll file from here: https://sourceforge.net/projects/pdfsharp/ and place it in the same folder than the export script. 
+In order to allow for loading of this dll file you need to right-click on the file and in the properties dialog click the "allow" button in the section "security".
+Furthermore, execution of unsigned powershell scripts must be allowed in Windows by executing 
+`Set-ExecutionPolicy Unrestricted`
+in a PowerShell with elevated rights (open PowerShell by right-clicking and selecting "run as administrator").
 
 OneNote must run and a user with valid reading credentials on the notebook in question must be logged in. 
 
